@@ -1,26 +1,26 @@
 html{
-  color:#000000;
-  background-color: #6B8E23;
-}
-header{
-background-color: #6B8E23;
+  background-color: #ffffff;
+  background-size: cover;
+  height: 200px;
 }
 
 nav> ul{
-  background-color:#556B2F;
+  background-color:#00000080;
   top: 300px;
+  display: block;
 
 }
 
-body{
-  background-color:#556B2F;
-
+img{
+background-size: cover;
 }
 
 nav>ul>li>ul>li{
-    display:inline-block;
+    display:block;
     text-align: center;
     top: 300px;
+    border: 1px solid;
+    border-bo
 }
 
 
@@ -60,4 +60,8 @@ li{
     top: 600px;
     color: #ffffff;
     background-color: transparent;
+}
+
+#fb{
+  background-color: white;
 }
