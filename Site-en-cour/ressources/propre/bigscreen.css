@@ -1,0 +1,296 @@
+html, body {
+  margin:0px;
+  height:100%;
+  font-family: 'logisosomedium';
+}
+
+
+@font-face {
+  font-family: 'logisosomedium';
+  src: url('logisoso-webfont.woff2') format('woff2'),
+  url('logisoso-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.contact {
+  text-align: center;
+}
+
+.wrapper {
+  position : relative;
+  display : inline-block;
+  margin-left: 30%;
+  width: 40%;
+  padding: 0;
+}
+
+.overlay {
+  position : absolute;
+  width : 100%;
+  height : 100%;
+  top : 0;
+  left : 0;
+}
+
+img {
+  width: 100%;
+}
+
+.hack h1 {
+  font-family: 'logisosomedium';
+  text-align: left;
+  font-size: 4em;
+  color: black;
+  margin:0;
+  padding: 2%;
+  position: fixed;
+  -webkit-transform: rotate(334deg);
+  -moz-transform: rotate(334deg);
+  -o-transform: rotate(334deg);
+  writing-mode: lr-tb;
+}
+
+#body {
+  top: 5;
+  height : 27%;
+}
+
+#head {
+  top: 10px;
+  height : 42%;
+}
+
+#foot {
+  height : 20%;
+}
+
+.part:hover {
+  /*visibility: visible;*/
+  /*background-color : rgba(0,0,0,0);
+  border: 3px solid pink;*/
+}
+
+
+.part-link {
+  display : block;
+  width : 100%;
+  height : 100%;
+}
+
+.part:hover span {
+  visibility : visible;
+}
+
+.part span {
+  visibility: hidden;
+}
+
+.part a {
+  text-decoration: none;
+}
+
+/*span {
+font-family: 'Logisoso';
+font-size: 140px;
+color: white;
+position:absolute;
+width: 100%;
+margin: auto;
+display:flex;
+justify-content: center;
+}*/
+
+body {
+  background: lightblue;
+}
+
+.part a:hover:before {
+  content: '';
+  position: fixed;
+  display: block;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
+  background-color: pink;
+}
+span {
+  opacity: 0;
+  transition: opacity 2s;
+}
+span:hover {
+  opacity: 0.7;
+}
+
+a.part-link  {
+  font-family: 'logisosomedium';
+  font-size: 160px;
+  color: white;
+  width: 100%;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+}
+/*#head a.part-link{
+padding-top: 75px;
+height: 215px;
+}*/
+
+#head span {
+  padding-top: 80px;
+}
+
+/*ASIDE*/
+
+
+aside nav {
+  background-color: pink;
+  position:fixed;
+  right:-20%;
+  width:18%;
+  height:100%;
+  top:0px;
+  transition:right 2s;
+}
+
+.menu_ole {
+  z-index:2;
+  position:fixed;
+  padding:.5em;
+  right :0px;
+  transition:right 2s;
+}
+
+
+
+#ole {
+  display: none;
+}
+
+#ole + label::before {
+  content:"	?";
+  font-size: 80px;
+  color: black;
+  top: -83px;
+  position:absolute;
+  right: 30px;
+}
+
+#ole:checked + label::before {
+  font-family: 'arial';
+  font-weight: bold;
+  content:"	X";
+  top:-83px;
+  position:absolute;
+}
+
+#ole:checked ~ nav {
+  right :0px;
+}
+
+#ole:checked + label {
+  right :20%;
+}
+
+aside div {
+  text-align: justify;
+  padding: 10%;
+  color: pink;
+  font-size: 21px;
+  list-style-type: none;
+  margin: auto;
+}
+
+aside nav li {
+  padding: 10%;
+
+}
+ aside div {
+  text-decoration: none;
+  color: black;
+  transition: color 1s;
+}
+
+aside nav a:hover {
+  color: black;
+}
+
+/*.contact a {
+  font-family: 'logisosomedium';
+  position: fixed;
+  text-decoration: none;
+  color: black;
+  bottom: 15px;
+  left: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 54px;
+}*/
+
+/*Section*/
+
+section nav {
+  background-color: pink;
+  position:fixed;
+  bottom:-81%;
+  width:100%;
+  height:81%;
+  transition:bottom 2s;
+}
+
+.menu_contact {
+  z-index:2;
+  position:fixed;
+  padding:.5em;
+  bottom:0;
+  left: 14px;
+  transition:bottom 2s;
+}
+
+#yolo {
+  display: none;
+}
+
+#yolo + label::before {
+  content:"Contact";
+  font-family: 'logisosomedium';
+  font-size: 60px;
+  color: black;
+  font-weight: bold;
+  top: -83px;
+  position:absolute;
+
+}
+
+#yolo:checked + label::before {
+  content:"	X";
+  font-size: 80px;
+  font-family: arial;
+  font-weight: bold;
+  top:-83px;
+  position:absolute;
+  left:0;
+}
+
+#yolo:checked ~ nav {
+  bottom:0;
+  left:0;
+}
+
+#yolo:checked + label {
+  bottom:68%;
+  left: 18px;
+}
+
+section h3 {
+  font-family: 'logisosomedium';
+  color: white;
+  text-shadow: 1px 1px 2px #C94A81;
+  font-size: 30px;
+}
+
+section p {
+  font-family: 'logisosomedium';
+  color: white;
+  text-shadow: 2px 2px 2px #C94A81;
+  font-size: 20px;
+  font-weight: bold;
+}
